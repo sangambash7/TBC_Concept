@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+}
+
+p,
+a {
+  color: rgb(85, 95, 98);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Utility Styling */
+.bg-darker {
+  background-color: rgb(249, 250, 250);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6rem 5rem;
+}
+
+.btn-blue {
+  background-image: linear-gradient(15deg, #001682, #3240e5);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  transition: opacity 0.25s ease-in-out;
+  padding: 1rem 2rem;
+}
+
+.btn-blue:hover {
+  background-image: none;
+  background-color: #007aff;
+}
+
+/* NAVBAR Styling */
+.navbar {
+  color: rgb(34, 34, 34);
+  padding: 2rem 0;
+}
+
+.link-blue {
+  color: rgb(24, 44, 192);
+}
+
+/* INTRO Styling */
+
+.intro-caption {
+  color: rgb(20, 23, 25);
+}
+.intro {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+}
+
+.intro .container {
+  background-image: url(/imgs/1.webp);
+  background-size: cover;
+  background-position-y: 25%;
+  height: 45vh;
+  position: relative;
+}
+
+/* PACKETS Section Styling */
+
+.packets-left img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.packets-right img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.packets-left,
+.packets-right {
+  position: relative;
+}
+
+.packets-overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.btn-packets {
+  font-size: 1.6rem;
+}
+
+.btn-packets:hover {
+  color: rgb(196, 126, 34);
+}
+
+/* STATS Styling */
+
+.stats-box {
+  background-color: white;
+  height: 15rem;
+  padding-left: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SUGGESTIONS Styling */
+
+.suggestions {
+  padding: 20px;
+}
+
+/* Carousel Styling */
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 33.3333%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.progress {
+  flex-grow: 1;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 0.5rem;
+  background-color: #007bff;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+/* DIGITAL Styling */
+.digital img {
+  object-fit: contain;
+  height: 70%;
+}
+
+.digital p {
+  margin: 4rem 0;
+}
+
+.btn-download {
+  border: 1px solid rgb(24, 44, 192);
+  color: rgb(24, 44, 192);
+  width: 12rem;
+  padding: 1rem 0;
+}
+
+/* PRODUCTS Styling */
+.products h2 {
+  padding: 8rem 0 3rem;
+}
+
+.products-img {
+  width: 100%;
+  height: 100%;
+}
+
+.products h4 {
+  margin: 2rem 0;
+}
+
+.products .card-group {
+  display: flex;
+  gap: 2rem;
+}
+
+/* PERS-BANKER Styling */
+.pers-banker {
+  padding: 10rem 0;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+}
+
+.pers-banker .container {
+  background-image: url(/imgs/15.png);
+  background-size: cover;
+  background-position-y: 25%;
+  height: 45vh;
+  position: relative;
+}
+
+/* AWARDS Styling */
+.awards-img {
+  width: auto !important;
+  height: 52px !important;
+  object-fit: cover !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* FOOTER Styling */
+.footer li,
+.footer ul {
+  list-style-type: none;
+  padding-bottom: 2.5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.footer .social-icon {
+  background-color: #f9fafa;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s;
+}
+
+.footer .social-icon:hover {
+  background-color: grey;
+}
+
+.second-footer a {
+  text-decoration: none;
+  margin: 0 3rem;
+}
+
+.second-footer img {
+  width: 3rem;
+}
